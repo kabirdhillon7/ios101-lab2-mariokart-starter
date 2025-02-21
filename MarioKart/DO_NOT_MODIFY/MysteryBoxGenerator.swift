@@ -12,15 +12,15 @@ import Foundation
  * DO NOT MODIFY ANYTHING IN THIS FILE
  */
 struct MysteryBox {
-  let mysteryEffect: AnyObject
-  init() {
-    let possibleEffects = ["translate", "rotate", "scale"]
-    mysteryEffect = ["effect": possibleEffects.randomElement()!] as AnyObject
-  }
+    let mysteryEffect: AnyObject
+    init() {
+        let possibleEffects = ["translate", "rotate", "scale"]
+        mysteryEffect = ["effect": possibleEffects.randomElement()!] as AnyObject
+    }
 }
 
 struct MysteryBoxGenerator {
-  static func generateMysteryBox() -> MysteryBox {
-    return MysteryBox()
-  }
+    static func generateMysteryBox() -> MysteryBox {
+        return MysteryBox()
+    }
 }
